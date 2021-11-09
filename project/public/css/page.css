@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+.nav_left{
+padding:41px 176px;
+
+}
+
+.nav_bar {
+  background-color: #09435b;
+  
+}
+.nav_right{
+  padding:52px 176px;
+
+}
+
+.nav_right select {
+  padding:5px 10px;
+  outline: 0;
+  background-color: #F0F4F5;
+
+}
+
+.footer_bar {
+  background-color: #09435b;
+  padding: 0px 259px; 
+}
+
+.new_footer a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer_right {
+  color: white;
+}
+.new_footer {
+
+  color: white; 
+  gap:15px;
+
+}
+
+.inner_contanier {
+  padding: 50px 50px;
+  
+}
+
+.back_btn {
+  border: 2px solid #09435b;
+  color: #09435b; 
+}
+.color{
+  color: #09425A;
+}
+
+.time_card {
+  padding: 15px 27px;
+  background-color: #0FB7B6;
+}
+
+.back_color{
+  background-color: #0FB7B6;
+  border: 1px solid white;
+  
+}
+
+.input {
+  border: 1px solid #0FB7B6;
+
+}
+.credit_card {
+background-color: #F0F4F5;
+
+}
+
+.btn1 {
+  background-color: #d1d8db;
+  color: #69d3d0;
+  border: 1px solid #69d3d0;
+  color: #09435b;
+}
+.page_container{
+  padding: 80px 0px 0px 167px;
+  
+}
+
+.btn2 {
+  background-color: #0eb6b6;
+  color: #69d3d0;
+  border: 1px solid #69d3d0;
+  color: white;
+}
+
+.button {
+  border-radius: 50px;
+  width: 350px;
+  background-color: #d0d8da;
+  color: white;
+  border: 0px;
+  height: 100px;
+}
+
+.button1 {
+  background-color: #0fb7b6;
+}
+
+.checkbox_label{
+
+color: #09425A;
+}
+
+.paragraph_fattura{
+ 
+  color: #09425A;
+}
+.email_paragraph {
+  
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+color: #000000;
+}
+
+.parking_go i {
+  font-size: 30px;
+}
+
+.parking_paragraph { 
+  background-color: #d0d8da;
+  padding: 40px 60px;
+}
+.parking_paragraph p {
+  text-decoration: underline;
+  font-size: small;
+}
+
+.card_active {
+  background-color: #0fb7b6;
+}
+
+.paragraph_date{
+
+color: #09425A;
+}
+.btn {
+  width: 165px;
+  height: 40px;
+  border: 2px solid #0FB7B6;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 765px) {
+
+
+  .hidden {
+    visibility: visible;
+  }
+
+  .page_container{
+    padding: 50px 0px 0px 30px;
+    
+  }
+
+  .nav_left{
+    padding:22px 32px;
+    
+    }
+    .nav_right{
+      padding:29px 29px;
+      
+    }
+  .footer_bar {
+    
+    padding: 0px 9px; 
+  }
+
+  .btngroup {
+    display: inline;
+  }
+
+  .card_contanier {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .parking_paragraph {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 30px;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .parking_paragraph p {
+    align-self: flex-end;
+  }
+
+  .paragraph_header {
+    align-self: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .paragraph_body {
+    align-self: center;
+    max-width: 40ch;
+  }
+
+  .button {
+    height: 66px;
+  }
+  
+
+  .btngroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .parking_paragraph { 
+  
+    padding: 0px 0px;
+  }
+
+}
