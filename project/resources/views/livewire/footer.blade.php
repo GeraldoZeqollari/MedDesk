@@ -8,8 +8,9 @@
     <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="footer_bar lg:flex lg:flex-wrap font-poppins font-normal lg:gap-24">
-        <div class="lg:flex lg:flex-col  lg:items-start  pt-7 text-white">
+    <div class="footer_bar page_left lg:flex lg:flex-wrap font-poppins font-normal lg:gap-24" >
+        
+        <div class="footer_b lg:flex lg:flex-col  lg:items-start  pt-7 text-white" >
                 <div class="nav_image">
                 
                     <svg width="102" height="35" viewBox="0 0 102 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -33,7 +34,7 @@
                     </div>
                 </div>
         </div>
-          <div class="footer_right pt-4 gap-4">
+          <div class="footer_right pt-4 gap-4" >
             <h1 class="font-poppins font-bold lg:text-2xl sm:text-sm">Supporto</h1>
             <div class="new_footer font-poppins font-normal text-sm  lg:flex lg:flex-row lg:justify-between lg:pt-8 sm:flex  sm:flex-col">
                 <a href="#">FAQ</a>
@@ -41,9 +42,10 @@
                 <a href="#">Termini e condizicioni</a>
             </div>
           </div>
-          <div class="font-poppins font-normal text-white lg:pt-0 lg:pr-56 lg:text-left sm:text-center sm:pt-20">
+          <div class="new_media font-poppins font-normal text-white lg:pt-0 lg:pr-56 lg:text-left sm:text-center sm:pt-20" >
             <p>2021 @Created by New Media Communications</p>
         </div>
-    </div>
+    
+</div>
 </body>
 </html>

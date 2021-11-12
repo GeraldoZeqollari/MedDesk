@@ -9,15 +9,16 @@
 <body>
   
 <div class="flex gap-3.5 flex-col items-start">
-    <div class="time_card flex flex-col gap-12 rounded-md cursor-pointer hover:bg-gray-300 focus:text-blue-700 focus:bg-blue-200 focus:outline-none focus:ring-blue-600 w-80 h-36">
+    <div class="time_card flex flex-col gap-12 rounded-md  w-80 h-36  cursor-pointer
+    hover:bg-gray-300 hover:text-white focus:text-gray-400 focus:bg-gray-300 focus:outline-none">
       <p class="text-white">
         {{$paragraph}} <i class="fas fa-info-circle text-white"></i>
       </p>
       <div class="flex justify-between">
         <h1 class="text-white">{{$price1}}</h1>
-            <div class="gap-1.5 flex items-center">
+            <div class="gap-1.5 flex items-center ">
              <p class="text-white">Qta</p>
-             <select name="" id="" class="back_color w-14">
+             <select name="" id="" class="w-14 hover:bg-gray-300">
                  <option value="0">0</option>
                  <option value="1">1</option>
                  <option value="2">2</option>

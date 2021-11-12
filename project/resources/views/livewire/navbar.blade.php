@@ -7,13 +7,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css" />
+   
 </head>
 </head>
 <body>
-    <div class="nav_bar w-full lg:flex lg:justify-between">
-        <div class="nav_left" >
-            <svg width="191" height="67" class=""  fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect width="191" height="67" class="lg:w-full" fill="url(#pattern0)"/>
+    <div class="nav_bar lg:w-full lg:flex lg:justify-between  sm:flex">
+        <div class="">
+            <svg class="svg" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect class="svg" fill="url(#pattern0)"/>
               <defs>
               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
               <use xlink:href="#image0_2:898" transform="translate(-0.00853244) scale(0.000425194 0.00121212)"/>
@@ -23,11 +24,11 @@
             </svg>
         </div>
         
-        <div class="nav_right">
-          <select name="" id="id_select2_example" class="font-normal rounded-md font-roboto text-lg lg:w-48 lg:h-11 sm:w-9 sm:h-6 ">
+        <div class="flex justify-content-center items-center">
+          <select name="" id="id_select2_example" class="example">
             
-              <option data-img_src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg"></option>
-              <option data-img_src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"></option>
+              <option data-img_src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" ><span class="hidden">Italiano</span></option>
+              <option data-img_src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"><span class="hidden">english</span></option>
          
 
           </select>
@@ -35,23 +36,6 @@
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
-<script type="text/javascript">
-    function custom_template(obj){
-            var data = $(obj.element).data();
-            var text = $(obj.element).text();
-            if(data && data['img_src']){
-                img_src = data['img_src'];
-                template = $("<div><img src=\"" + img_src + "\" style=\"width:25%; bottom:3px;height:40px;\"/><p style=\"font-weight: 700;font-size:14px;\">" + text + "</p></div>");
-                return template;
-            }
-        }
-    var options = {
-        'templateSelection': custom_template,
-        'templateResult': custom_template,
-    }
-    $('#id_select2_example').select2(options);
-    $('.select2-container--default .select2-selection--single').css({'height': '40px'});
-
-</script>
+<script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
 </body>
 </html>

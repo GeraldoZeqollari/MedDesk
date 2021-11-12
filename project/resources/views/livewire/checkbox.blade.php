@@ -1,8 +1,10 @@
-<div>
-    <input type="checkbox" id="termi" name="termi" value="" />
-    <label for="termi" class="checkbox_label text-poppins lg:text-lg sm:text-sm">
+<form>
+    <div class="page_left flex items-baseline">
+    <input type="checkbox" id="{{$name}}" name="{{$name}}"  />
+    <div class="ml-4 mt-2 check_text">
+    <label for="{{$name}}" class="color text-poppins lg:text-lg sm:text-sm">
          {{$checkbox_text}}
-    </label
-    ><br />
-    
-</div
+    </label>
+    </div>
+    </div>
+</form>

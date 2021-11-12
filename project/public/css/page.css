@@ -1,27 +1,42 @@
 * {
   margin: 0;
   padding: 0;
-  
-}
-.nav_left{
-padding:41px 176px;
-
 }
 
 .nav_bar {
   background-color: #09435b;
-  
-}
-.nav_right{
-  padding:52px 176px;
-
+  padding:30px 160px;
+  display:flex;
+  justify-content: space-between;
 }
 
+.svg{
+  width: 191px;
+  height:67px;
+}
+.select2-search__field{
+  display: none;
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #0FB7B6;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox-round:checked {
+  border: 5px solid #0FB7B6;
+}
 .nav_right select {
   padding:5px 10px;
   outline: 0;
   background-color: #F0F4F5;
-
 }
 
 .footer_bar {
@@ -34,20 +49,12 @@ padding:41px 176px;
   color: white;
 }
 
-
 .footer_right {
   color: white;
 }
 .new_footer {
-
   color: white; 
   gap:15px;
-
-}
-
-.inner_contanier {
-  padding: 50px 50px;
-  
 }
 
 .back_btn {
@@ -57,7 +64,9 @@ padding:41px 176px;
 .color{
   color: #09425A;
 }
-
+.btn_text{
+  color: #0FB7B6;
+}
 .time_card {
   padding: 15px 27px;
   background-color: #0FB7B6;
@@ -66,34 +75,35 @@ padding:41px 176px;
 .back_color{
   background-color: #0FB7B6;
   border: 1px solid white;
-  
+}
+
+.hidden_date{
+  visibility:hidden;
 }
 
 .input {
   border: 1px solid #0FB7B6;
-
+  outline: 0;
+  height: 63px;
 }
 .credit_card {
 background-color: #F0F4F5;
 
 }
+.example{
+  width:204px;  
+}
 
 .btn1 {
+  width: 348px;
+  height: 109px;
   background-color: #d1d8db;
   color: #69d3d0;
   border: 1px solid #69d3d0;
-  color: #09435b;
-}
-.page_container{
-  padding: 80px 0px 0px 167px;
-  
 }
 
-.btn2 {
-  background-color: #0eb6b6;
-  color: #69d3d0;
-  border: 1px solid #69d3d0;
-  color: white;
+.page_container{
+  padding: 80px 165px 0px 167px;
 }
 
 .button {
@@ -103,28 +113,21 @@ background-color: #F0F4F5;
   color: white;
   border: 0px;
   height: 100px;
+  margin-bottom: 20px;
+  margin-top:20px
 }
 
 .button1 {
   background-color: #0fb7b6;
 }
 
-.checkbox_label{
-
-color: #09425A;
-}
-
-.paragraph_fattura{
- 
-  color: #09425A;
-}
 .email_paragraph {
   
-font-family: Poppins;
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-color: #000000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
 }
 
 .parking_go i {
@@ -133,100 +136,183 @@ color: #000000;
 
 .parking_paragraph { 
   background-color: #d0d8da;
-  padding: 40px 60px;
+  padding: 40px;
+  
 }
 .parking_paragraph p {
   text-decoration: underline;
   font-size: small;
 }
 
-.card_active {
-  background-color: #0fb7b6;
-}
-
-.paragraph_date{
-
-color: #09425A;
-}
 .btn {
   width: 165px;
   height: 40px;
   border: 2px solid #0FB7B6;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 @media only screen and (max-width: 765px) {
-
-
-  .hidden {
-    visibility: visible;
-  }
 
   .page_container{
     padding: 50px 0px 0px 30px;
-    
   }
 
-  .nav_left{
-    padding:22px 32px;
-    
-    }
-    .nav_right{
-      padding:29px 29px;
-      
-    }
-  .footer_bar {
-    
-    padding: 0px 9px; 
+  .nav_bar{
+    padding:22px 30px;
   }
 
-  .btngroup {
-    display: inline;
+  .parking_paragraph { 
+    padding: 100px 60px;
   }
 
-  .card_contanier {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .nav_right{
+      padding:29px 0px 0px 70px;  
   }
-  .parking_paragraph {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 40px;
-    gap: 30px;
-    align-items: flex-start;
-    padding-left: 20px;
-  }
-  .parking_paragraph p {
-    align-self: flex-end;
-  }
-
-  .paragraph_header {
-    align-self: center;
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .paragraph_body {
-    align-self: center;
-    max-width: 40ch;
-  }
-
   .button {
     height: 66px;
   }
-  
+}
 
-  .btngroup {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+@media only screen and (max-width: 414px) {
+
+  .hidden-mine  {
+    visibility: hidden;
+    
   }
-  .parking_paragraph { 
+  .input{
+    height: 40px;
+  }
+  .hidden_date{
+    visibility: visible;
+    
+  }
+  .example{
+    width:60px !important;
+    padding:0px 25px;
+    
+  }
+  .select2-container--default .select2-selection--single{
+    width: 100px;
+    
+  }
+  .select2-selection__arrow{
+    padding:18px 50px;
+    
+  }
+
+  .select2-selection{
+
+    margin-left: 70px;
+  }
   
-    padding: 0px 0px;
+ 
+  .page_container{
+    padding: 50px 0px 0px 0px;
+    
+  }
+  .page_left{
+    padding:10px 32px 0px 32px;
+  }
+  .svg{
+    width: 91px;
+    height:31px;
+  }
+ 
+  .nav_bar{
+    padding:32px 22px;
+  }
+
+  .inner_contanier{
+    padding:30px;
+    
+  } 
+  .paragraph_prenota{
+    text-align: center; 
+    max-width: 350px;
+    font-size:14px;
+  }
+
+  .first_para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parking_paragraph { 
+    display: flex;
+    flex-direction: column;  
+    padding:30px;
+    width:100%;
+  }
+.title04{
+  width: 100%;
+}
+  .modifica{
+    text-align: right;
+  }
+
+  .btn1{
+    width: 170px;
+    height:55px;
+  }
+
+  .footer_bar {
+    padding: 0px 10px; 
+  }
+
+  .new_footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .new_media{
+    padding:67px;
+    text-align: center;
+    font-size: 9px;
+  }
+  .pagamento{
+    display: inline-flex;
+  }
+  .ccv{
+    width: 46%;
+  }
+
+  .credit_card{
+  padding: 10px;
+  }
+  .email_paragraph{
+  font-size: 10px;
+  }
+  .button {
+    height: 66px;
+  }
+ 
+}
+
+@media  screen and (min-width: 1920px) {
+
+
+  .check_text{
+ 
+  width: 75%;
+  }
+
+  .title04{
+    width: 85%;
+  }
+  .footer_div{
+   
+  }
+
+  .new_media{
+
+
+  position: relative;
+  margin-top: 215px;
+  font-size: 13px;
+  right: 570px;
+
+
+
   }
 
 }

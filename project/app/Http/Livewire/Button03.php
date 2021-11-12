@@ -8,9 +8,11 @@ class Button03 extends Component
 {
 
     public $button;
-    public function mount($button_title)
+    public $button_id;
+    public function mount($button_title, $button_id)
     {
         $this->button = $button_title;
+        $this->button_id = $button_id;
     }
     public function render()
     {

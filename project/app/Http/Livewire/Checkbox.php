@@ -8,11 +8,12 @@ class Checkbox extends Component
 {
 
     public $checkbox_text;
+    public $name;
 
-
-    public function mount($check)
+    public function mount($check, $name)
     {
         $this->checkbox_text = $check;
+        $this->name = $name;
     }
 
 
