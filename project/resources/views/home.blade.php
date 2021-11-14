@@ -35,7 +35,7 @@
           <div class="pb-4">
           <livewire:title title="01. Prenota or ai tamponin Drive-in"/>
           </div>
-          <div class="parking_paragraph flex gap-6 justify-between title04">
+          <div class="parking_paragraph flex gap-6 justify-between title04 rounded-md">
             <div class="color flex items-center text-poppins lg:text-4xl gap-6 sm:text-2xl ">
               <i class="fas fa-map-marker-alt"></i>
               <h2 class="font-poppins font-normal lg:text-4xl sm:text-lg">ParkinGO Malpensa</h2>
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="lg:flex lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:mb-10">
+       <div class="lg:flex lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:mb-10">
           <livewire:title title="03. Scegli fra le date e orari disponibli"/>
           <div class=" page_left flex flex-col gap-1.5">
             <p class="color text-poppins lg:text-2xl sm:text-lg pt-3">Date</p>
@@ -70,6 +70,7 @@
             <livewire:button03 button_title="lunedi27" button_id="button_color5"/>
             <livewire:button03 button_title="lunedi27" button_id="button_color6"/>
             <livewire:button03 button_title="lunedi27" button_id="button_color7"/>
+            <livewire:button03 button_title="lunedi27" button_id="button_color8"/>
             <livewire:button03 button_title="lunedi27" button_id="button_color8"/>
            </div>
           </div>
