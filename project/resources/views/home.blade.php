@@ -123,10 +123,10 @@
           <p class="color page_left text-poppins lg:text-2xl sm:text-sm">A chi dovra essere intestata la fattura</p>
           <div class="page_left flex gap-3">
           <div>
-          <livewire:squarebutton button_text="Azienda" icon="fas fa-users"/>
+          <livewire:squarebutton button_text="Azienda" icon="fas fa-users fa-2x button_text_color"/>
           </div>
           <div>
-          <livewire:squarebutton button_text="Private" icon="fas fa-user"/>
+          <livewire:squarebutton button_text="Private" icon="fas fa-user fa-2x button_text_color"/>
           </div>
           </div>
           <livewire:title05 textfield="Name"  textfield1="Cogname"  textfield2="Codice fiscale" textfield3="Email invio fattura"
