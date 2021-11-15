@@ -1,6 +1,5 @@
 
 <head>
- 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/page.css') }}" rel="stylesheet" type="text/css">
 </head>
@@ -31,6 +30,7 @@
                     </div>
                 </div>
         </div>
+
           <div class="footer_right pt-4 gap-4" >
             <h1 class="font-poppins font-bold lg:text-2xl sm:text-sm">Supporto</h1>
             <div class="new_footer font-poppins font-normal text-sm  lg:flex lg:flex-row lg:justify-between lg:pt-8 sm:flex  sm:flex-col">
@@ -39,10 +39,10 @@
                 <a href="#">Termini e condizicioni</a>
             </div>
           </div>
+
           <div class="new_media font-poppins font-normal text-white lg:pt-0 lg:pr-56 lg:text-left sm:text-center sm:pt-20" >
             <p>2021 @Created by New Media Communications</p>
-        </div>
+          </div>
     
-</div>
+    </div>
 </body>
-</html>

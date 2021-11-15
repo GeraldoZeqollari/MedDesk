@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css" />
    
 </head>
-</head>
+
 <body>
     <div class="nav_bar lg:w-full lg:flex lg:justify-between  sm:flex">
         <div class="">
@@ -30,9 +30,9 @@
 
           </select>
         </div>
+
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
 <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
 </body>
-</html>

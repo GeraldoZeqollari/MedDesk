@@ -15,9 +15,11 @@
 <body>
     @livewire('navbar') 
 <div class="page_container">
-<div class="page_left">
-    <button class=" back_btn rounded-full w-7 h-7 bg-transparent"><i class="fas fa-arrow-left"></i></button>
-  </div>
+
+      <div class="page_left">
+        <button class=" back_btn rounded-full w-7 h-7 bg-transparent"><i class="fas fa-arrow-left"></i></button>
+      </div>
+   
     <div class="text-poppins lg:p-12  lg:flex lg:flex-col  lg:justify-evenly gap-4  sm:p-10">
 
         <div class="inner_contanier page_left lg:flex lg:flex-col lg:gap-6 sm:mb-12 ">
@@ -57,7 +59,7 @@
             </div>
         </div>
 
-       <div class="lg:flex lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:mb-10">
+        <div class="lg:flex lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:mb-10">
           <livewire:title title_text="03. Scegli fra le date e orari disponibli"/>
           
           <div class=" page_left flex flex-col gap-1.5">
@@ -159,7 +161,7 @@
 
 </div>
 
-    @livewire('footer') 
-    @livewireScripts
+@livewire('footer') 
+@livewireScripts
 </body>
 </html>
