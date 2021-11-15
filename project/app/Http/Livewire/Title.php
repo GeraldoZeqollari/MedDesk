@@ -8,11 +8,11 @@ class Title extends Component
 {
 
 
-    public $title1;
+    public $title_text;
 
-    public function mount($title)
+    public function mount($title_text)
     {
-        $this->title1 = $title;
+        $this->title_text = $title_text;
     }
 
     public function render()

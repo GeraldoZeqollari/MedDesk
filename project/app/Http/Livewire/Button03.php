@@ -7,11 +7,12 @@ use Livewire\Component;
 class Button03 extends Component
 {
 
-    public $button;
+    public $date_time;
     public $button_id;
-    public function mount($button_title, $button_id)
+
+    public function mount($date_time, $button_id)
     {
-        $this->button = $button_title;
+        $this->date_time = $date_time;
         $this->button_id = $button_id;
     }
     public function render()

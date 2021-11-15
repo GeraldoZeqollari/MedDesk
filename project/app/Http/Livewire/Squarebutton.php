@@ -7,12 +7,12 @@ use Livewire\Component;
 class Squarebutton extends Component
 {
 
-    public $name;
+    public $button_text;
     public $icon;
 
-    public function mount($name, $icon)
+    public function mount($button_text, $icon)
     {
-        $this->name = $name;
+        $this->button_text = $button_text;
         $this->icon = $icon;
     }
     public function render()

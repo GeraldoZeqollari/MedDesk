@@ -33,7 +33,7 @@
        
         <div class="lg:flex lg:flex-col sm:gap-2 sm:mb-12  " >
           <div class="pb-4">
-          <livewire:title title="01. Prenota or ai tamponin Drive-in"/>
+          <livewire:title title_text="01. Prenota or ai tamponin Drive-in"/>
           </div>
           <div class="parking_paragraph flex gap-6 justify-between title04 rounded-md">
             <div class="color flex items-center text-poppins lg:text-4xl gap-6 sm:text-2xl ">
@@ -50,45 +50,46 @@
         </div>
 
         <div class="lg:flex lg:pb-0 lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:pb-10" >
-          <livewire:title title="02. Prenota or ai tamponin Drive-in"/>
+          <livewire:title title_text="02. Prenota or ai tamponin Drive-in"/>
             <div class="page_left gap-3 pt-3 flex flex-row flex-wrap lg:gap-12 sm:gap-6 lg:pb-8 sm:pb-6">
-             <livewire:button02 title="Tampone Rapido Antigenico" price="50$"/>
-             <livewire:button02 title="Tampone Moleculare PCR" price="90$"/>
+             <livewire:button02 tampone_type="Tampone Rapido Antigenico" tampone_price="50$"/>
+             <livewire:button02 tampone_type="Tampone Moleculare PCR" tampone_price="90$"/>
             </div>
         </div>
 
        <div class="lg:flex lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:mb-10">
-          <livewire:title title="03. Scegli fra le date e orari disponibli"/>
+          <livewire:title title_text="03. Scegli fra le date e orari disponibli"/>
+          
           <div class=" page_left flex flex-col gap-1.5">
             <p class="color text-poppins lg:text-2xl sm:text-lg pt-3">Date</p>
           <div class="flex w-full flex-wrap gap-5">
-            <livewire:button03 button_title="lunedi27" button_id="button_color" />
-            <livewire:button03 button_title="lunedi27" button_id="button_color"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color3"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color4"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color5"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color6"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color7"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color8"/>
-            <livewire:button03 button_title="lunedi27" button_id="button_color8"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color" />
+            <livewire:button03 date_time="lunedi27" button_id="button_color"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color3"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color4"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color5"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color6"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color7"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color8"/>
+            <livewire:button03 date_time="lunedi27" button_id="button_color8"/>
            </div>
           </div>
           
           <div class="page_left flex flex-col gap-1.5">
             <p class="color text-poppins lg:text-2xl sm:text-lg pt-3">Orari</p>
             <div class="flex flex-wrap gap-5">
-              <livewire:button03 button_title="10:00" button_id="button_color9"/>
-              <livewire:button03 button_title="10:00" button_id="button_color10"/>
-              <livewire:button03 button_title="10:00" button_id="button_color11"/>
-              <livewire:button03 button_title="10:00" button_id="button_color12"/>
-              <livewire:button03 button_title="10:00" button_id="button_color13"/>
-              <livewire:button03 button_title="10:00" button_id="button_color14"/>
-              <livewire:button03 button_title="10:00" button_id="button_color15"/>
-              <livewire:button03 button_title="10:00" button_id="button_color16"/>
-              <livewire:button03 button_title="10:00" button_id="button_color17"/>
-              <livewire:button03 button_title="10:00" button_id="button_color18"/>
-              <livewire:button03 button_title="10:00" button_id="button_color19"/>
+              <livewire:button03 date_time="10:00" button_id="button_color9"/>
+              <livewire:button03 date_time="10:00" button_id="button_color10"/>
+              <livewire:button03 date_time="10:00" button_id="button_color11"/>
+              <livewire:button03 date_time="10:00" button_id="button_color12"/>
+              <livewire:button03 date_time="10:00" button_id="button_color13"/>
+              <livewire:button03 date_time="10:00" button_id="button_color14"/>
+              <livewire:button03 date_time="10:00" button_id="button_color15"/>
+              <livewire:button03 date_time="10:00" button_id="button_color16"/>
+              <livewire:button03 date_time="10:00" button_id="button_color17"/>
+              <livewire:button03 date_time="10:00" button_id="button_color18"/>
+              <livewire:button03 date_time="10:00" button_id="button_color19"/>
             </div>
 
             </div>
@@ -97,60 +98,60 @@
 
         <div class="lg:flex lg:flex-col pt-4 lg:gap-6 sm:gap-2">
           <div class="pb-2">
-          <livewire:title title="04. Dati anagrafici"/>
+          <livewire:title title_text="04. Dati anagrafici"/>
           </div>
           <livewire:title04 textfield="Name"  textfield1="Cogname" textfield2="Email" textfield3="Cellulare"
            textfield4="Nazionalita"  textfield5="Code di fiscale" textfield6="Data di nascita"
             textfield7="Sesso" textfield8="Comune residenca" textfield9="Cap"  textfield0="Indirizzo"/>
 
-          <livewire:checkbox check="Ho preso visione dell'informativa sul tratamentto dei miei dati
-          personali e i Termini e Condizioni *(leggi)" name="termi"/>
-          <livewire:checkbox1 check1=" Ho preso visione dell'informativa sul tratamentto dei miei dati
+          <livewire:checkbox checkbox_text="Ho preso visione dell'informativa sul tratamentto dei miei dati
+          personali e i Termini e Condizioni *(leggi)" checkbox_name="termi"/>
+          <livewire:checkbox checkbox_text=" Ho preso visione dell'informativa sul tratamentto dei miei dati
           personali e do il consenso al loro tratamentto da parte di
           Medispa S.r.l quale unico Responsabile Esterno del tratamentto
-          dei dati sanitari .*(leggi)" name="dati_person"/>
+          dei dati sanitari .*(leggi)" checkbox_name="dati_person"/>
             
-          <livewire:round-button button_round="AVANTI"/>
+          <livewire:round-button button_text="AVANTI"/>
         </div>
 
         <div class="lg:flex lg:flex-col lg:gap-6 sm:gap-2 sm:mb-8">
           <div class="pb-4">
-          <livewire:title title="05. Tipo di ricuveta"/>
+          <livewire:title title_text="05. Tipo di ricuveta"/>
           </div>
           <p class="color page_left text-poppins lg:text-2xl sm:text-sm">A chi dovra essere intestata la fattura</p>
           <div class="page_left flex gap-3">
           <div>
-          <livewire:squarebutton name="Azienda" icon="fas fa-users"/>
+          <livewire:squarebutton button_text="Azienda" icon="fas fa-users"/>
           </div>
           <div>
-          <livewire:squarebutton name="Private" icon="fas fa-user"/>
+          <livewire:squarebutton button_text="Private" icon="fas fa-user"/>
           </div>
           </div>
           <livewire:title05 textfield="Name"  textfield1="Cogname"  textfield2="Codice fiscale" textfield3="Email invio fattura"
           textfield4="Indirizzo"  textfield5="Citta" textfield6="Cap"
            textfield7="Provinzia" textfield8="Nazione"/>
            
-           <livewire:round-button button_round="VERIFICA"/>
+           <livewire:round-button button_text="VERIFICA"/>
           
         </div>
         
         <div class= "lg:flex lg:flex-col lg:gap-6 sm:gap-4 sm:mb-10 mb-10">
-          <livewire:title title="06. Metoda di pagamento "/>
+          <livewire:title title_text="06. Metoda di pagamento "/>
           <livewire:pagamento/>
        
-          <livewire:checkbox check="Ho preso visione dell'informativa sul tratamentto dei miei dati
-          personali e i Termini e Condizioni *(leggi)" name="termi_info"/>
+          <livewire:checkbox checkbox_text="Ho preso visione dell'informativa sul tratamentto dei miei dati
+          personali e i Termini e Condizioni *(leggi)" checkbox_name="termi_info"/>
           
-          <livewire:checkbox1 check1=" Ho preso visione dell'informativa sul tratamentto dei miei dati
+          <livewire:checkbox checkbox_text=" Ho preso visione dell'informativa sul tratamentto dei miei dati
           personali e do il consenso al loro tratamentto da parte di
           Medispa S.r.l quale unico Responsabile Esterno del tratamentto
-          dei dati sanitari .*(leggi)" name="dati_personali"/>
-          <livewire:checkbox1 check1=" Ho preso visione dell'informativa sul tratamentto dei miei dati
+          dei dati sanitari .*(leggi)" checkbox_name="dati_personali"/>
+          <livewire:checkbox checkbox_text=" Ho preso visione dell'informativa sul tratamentto dei miei dati
           personali e do il consenso al loro tratamentto da parte di
           Medispa S.r.l quale unico Responsabile Esterno del tratamentto
-          dei dati sanitari .*(leggi)" name="dati"/>
+          dei dati sanitari .*(leggi)" checkbox_name="dati"/>
 
-          <livewire:round-button button_round="CONFERMA E PAGA"/>
+          <livewire:round-button button_text="CONFERMA E PAGA"/>
         
         </div>
 

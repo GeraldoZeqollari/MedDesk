@@ -7,11 +7,11 @@ use Livewire\Component;
 class PagamentoTextfield extends Component
 {
 
-    public $text;
+    public $input_name;
 
-    public function mount($text)
+    public function mount($input_name)
     {
-        $this->text = $text;
+        $this->input_name = $input_name;
     }
     public function render()
     {

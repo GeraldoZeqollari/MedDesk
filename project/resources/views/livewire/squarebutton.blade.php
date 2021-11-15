@@ -1,5 +1,5 @@
 
 <div>
-        <button class="btn1 sm:h-14 rounded-sm text-poppins"><i class="{{$icon}}  pr-5"></i>{{$name}}</button> 
+        <button class="btn1 sm:h-14 rounded-sm text-poppins"><i class="{{$icon}}  pr-5"></i>{{$button_text}}</button> 
 </div>
 

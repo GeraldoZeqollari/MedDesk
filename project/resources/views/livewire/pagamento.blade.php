@@ -12,20 +12,20 @@
     <div class="credit_card  title04 lg:w-full lg:rounded-md lg:p-5 lg:flex lg:flex-col lg:gap-6">
       <div class="credit_data flex flex-col">
         <label for="provinzia" class="color text-popins lg:text-2xl sm:text-xs">Provinzia</label>
-        <livewire:pagamento-textfield text="provinzia"/>
+        <livewire:pagamento-textfield input_name="provinzia"/>
       </div>
         <div class="pagamento lg:grid lg:grid-cols-2 sm:flex sm:flex-row gap-1">
      
-            <livewire:pagamento-text label="Data di scadenza" type="date" text="date"/>
+            <livewire:pagamento-text label="Data di scadenza" type="date" input_name="date"/>
      
               
-            <livewire:pagamento-text  label="CVC/CVV" type="number" text="cvc"/>
+            <livewire:pagamento-text  label="CVC/CVV" type="number" input_name="cvc"/>
             {{-- <i class="far fa-credit-card cvc"></i> --}}
       
        </div>
       <div class="credit_data  flex flex-col">
         <label for="nome" class="color text-popins lg:text-2xl sm:text-xs">Nome sualla carta</label>
-        <livewire:pagamento-textfield text="nome"/>
+        <livewire:pagamento-textfield input_name="nome"/>
       </div>
     </div>
 

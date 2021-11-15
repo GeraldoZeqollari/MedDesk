@@ -10,14 +10,14 @@ class PagamentoText extends Component
 
     public $type;
     public $label;
-    public $text;
+    public $input_name;
 
 
-    public function mount($label, $type, $text)
+    public function mount($label, $type, $input_name)
     {
         $this->label = $label;
         $this->type = $type;
-        $this->type = $text;
+        $this->input_name = $input_name;
     }
 
     public function render()

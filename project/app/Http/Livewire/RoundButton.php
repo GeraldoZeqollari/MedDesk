@@ -7,11 +7,13 @@ use Livewire\Component;
 class RoundButton extends Component
 {
 
-    public $button;
-    public function mount($button_round)
+    public $button_text;
+
+    public function mount($button_text)
     {
-        $this->button = $button_round;
+        $this->button_text = $button_text;
     }
+
     public function render()
     {
         return view('livewire.round-button');

@@ -6,14 +6,14 @@ use Livewire\Component;
 
 class Button02 extends Component
 {
-   
-    public $paragraph;
-    public $price1;
 
-    public function mount($title, $price)
+    public $tampone_type;
+    public $tampone_price;
+
+    public function mount($tampone_type, $tampone_price)
     {
-        $this->paragraph = $title;
-        $this->price1 = $price;
+        $this->tampone_type = $tampone_type;
+        $this->tampone_price = $tampone_price;
     }
 
 
