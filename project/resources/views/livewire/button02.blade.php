@@ -1,7 +1,5 @@
 
-<head>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
-</head>
+
 <body>
   
 <div class="flex gap-3.5 flex-col items-start">

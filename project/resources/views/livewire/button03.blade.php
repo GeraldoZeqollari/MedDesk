@@ -1,7 +1,4 @@
 
-<head>
-
-</head>
 <body>
 
     <div class="flex flex-wrap">
