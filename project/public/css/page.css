@@ -302,10 +302,10 @@ background-color: #F0F4F5;
     text-align: right;
   }
 
-  /* .btn1{
-    width: 170px;
+  .btn1{
+    width: 175px;
     height:55px;
-  } */
+  }
 
   .footer_bar {
     padding: 0px 10px; 
