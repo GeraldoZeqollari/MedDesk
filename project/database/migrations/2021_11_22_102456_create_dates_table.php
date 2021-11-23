@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTamponeMoleculareTable extends Migration
+class CreateDatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateTamponeMoleculareTable extends Migration
      */
     public function up()
     {
-        Schema::create('tampone_moleculare', function (Blueprint $table) {
+        Schema::create('dates', function (Blueprint $table) {
             $table->id();
-            $table->double("price");
-            $table->integer("quantity");
+            $table->foreignId('location_id')->constrained('locations');
+            $table->date("date");
         });
     }
 
@@ -27,6 +27,6 @@ class CreateTamponeMoleculareTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tampone_moleculare');
+        Schema::dropIfExists('dates');
     }
 }

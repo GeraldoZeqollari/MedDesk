@@ -9,7 +9,44 @@
   display:flex;
   justify-content: space-between;
 }
+.location{
+  background-color: #D0D8DA;
+  outline: 0;
+}
+.feedback_issue {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 165px;
+  height: 40px;
+  border: 2px solid #0FB7B6;
+}
+.label_exp {
+  font-family: v.$HeaderFont;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 10px;
+  margin-top: -4px;
+  margin-bottom: 0;
+     
+  }
+  input[type="radio"] {
+    display: none;
 
+  }
+  #gender{
+    display: inline-flex;
+  }
+  
+
+  input[type="radio"]:checked + label {
+    background-color:#0FB7B6;
+    color:white;
+    width: 165px;
+    height: 40px;
+  }
 .svg{
   width: 191px;
   height:67px;
@@ -32,6 +69,7 @@
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
+  
 }
 .checkbox-round:checked {
   border: 5px solid #0FB7B6;
@@ -41,6 +79,7 @@
   outline: 0;
   background-color: #F0F4F5;
 }
+
 
 .footer_bar {
   background-color: #09435b;
@@ -88,6 +127,8 @@
   border: 1px solid #0FB7B6;
   outline: 0;
   height: 63px;
+  width:100%;
+  border-radius: 5px;
 }
 .credit_card {
 background-color: #F0F4F5;
@@ -96,13 +137,17 @@ background-color: #F0F4F5;
 .example{
   width:204px;  
 }
-
-.btn1 {
-  width: 348px;
-  height: 109px;
-  background-color: #d1d8db;
-  color: #69d3d0;
-  border: 1px solid #69d3d0;
+.btn_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+.radio_text{
+  width: 350px;
+  height:110px;
+  background-color: #D0D8DA;
 }
 
 .page_container{
@@ -146,12 +191,15 @@ background-color: #F0F4F5;
   text-decoration: underline;
   font-size: small;
 }
+.text_error{
+  color:red;
+}
 
-.btn {
+/* .btn {
   width: 165px;
   height: 40px;
   border: 2px solid #0FB7B6;
-}
+} */
 
 @media only screen and (max-width: 765px) {
 
@@ -183,6 +231,7 @@ background-color: #F0F4F5;
   }
   .input{
     height: 40px;
+   
   }
   .hidden_date{
     visibility: visible;
@@ -213,7 +262,7 @@ background-color: #F0F4F5;
     
   }
   .page_left{
-    padding:10px 32px 0px 32px;
+    padding:10px 32px 0px 20px;
   }
   .svg{
     width: 91px;
@@ -253,10 +302,10 @@ background-color: #F0F4F5;
     text-align: right;
   }
 
-  .btn1{
+  /* .btn1{
     width: 170px;
     height:55px;
-  }
+  } */
 
   .footer_bar {
     padding: 0px 10px; 
@@ -276,7 +325,7 @@ background-color: #F0F4F5;
     display: inline-flex;
   }
   .ccv{
-    width: 46%;
+    width: 50%;
   }
 
   .credit_card{

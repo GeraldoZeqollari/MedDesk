@@ -1,9 +1,8 @@
 
 
-
-<div class="flex flex-wrap">
-        <button class="btn btn_text box-border rounded-md bg-white-600 text-blue-100 cursor-pointer
-         hover:bg-blue-500 hover:text-white focus:text-gray-400 focus:bg-gray-300 focus:outline-none focus:ring-blue-600" id="{{$button_id}}">{{$date_time}}</button>
+<div class="feedback_issue flex flex-wrap">
+        <input type="radio" id="{{$button_id}}" name="date" value="{{$button_value}}"/> 
+        <label for="{{$button_id}}" class="label_exp">{{$date_time}}</label>
 </div>
 
 

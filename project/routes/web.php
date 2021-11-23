@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MedicalFormController;
+use App\Models\Invoice;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', [MedicalFormController::class, 'index']);
+// Route::post('/', [MedicalFormController::class, 'store']);
+
+// Route::post('/', [InvoiceController::class, 'store']);
+
+Route::resource('/', MedicalFormController::class);
+
+// Route::resource('/', InvoiceController::class);

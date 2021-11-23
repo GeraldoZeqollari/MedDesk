@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOrariTable extends Migration
+class CreateOrarisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateOrariTable extends Migration
      */
     public function up()
     {
-        Schema::create('orari', function (Blueprint $table) {
+        Schema::create('oraris', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('date_id')->constrained('dates');
             $table->time("orari");
         });
     }
@@ -26,6 +27,6 @@ class CreateOrariTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('orari');
+        Schema::dropIfExists('oraris');
     }
 }

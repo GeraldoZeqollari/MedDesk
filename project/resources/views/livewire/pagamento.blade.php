@@ -1,4 +1,5 @@
-<form>
+
+ 
 <div class="page_left">   
 
     <div class="color  flex pb-8 pt-4  lg:text-2xl items-center sm:text-xs">
@@ -46,5 +47,5 @@
     </div>
     
 </div>
-</form>
+
 

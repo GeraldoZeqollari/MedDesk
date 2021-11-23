@@ -11,7 +11,7 @@
         <h1 class="text-white">{{$tampone_price}}</h1>
             <div class="gap-1.5 flex items-center ">
                <p class="text-white">Qta</p>
-               <select name="" id="" class="w-14 hover:bg-gray-300">
+               <select name="quantity" id="" class="w-14 hover:bg-gray-300">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
