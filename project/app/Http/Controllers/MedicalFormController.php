@@ -14,13 +14,12 @@ class MedicalFormController extends Controller
 {
     public function index()
     {
-        // $locations = Location::all();
+        $locations = Location::all();
+        $dates = Date::all();
+        $oraris = Orari::all();
 
 
-        // dd($locations);
-
-        return view('home');
-        // ->with(compact('locations'));
+        return view('home')->with(compact('locations', 'dates', 'oraris'));
     }
 
     public function store(CreateMedicalRecordRequest $request)
@@ -28,6 +27,7 @@ class MedicalFormController extends Controller
 
         // $validated = $request->validated();
 
+        
         $personal_data = [
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
@@ -60,19 +60,19 @@ class MedicalFormController extends Controller
         Invoice::create($invoice);
 
 
-        Location::create([
-            'location' => $request->location
-        ]);
+        // Location::create([
+        //     'location' => $request->location
+        // ]);
 
 
-        Date::create([
-            'date' => $request->date
-        ]);
+        // Date::create([
+        //     'date' => $request->date
+        // ]);
 
-        Orari::create([
-            'orari' => $request->orari
-        ]);
+        // Orari::create([
+        //     'orari' => $request->orari
+        // ]);
 
-        return back()->with("status", "ok");
+        return back()->with("status", "Success");
     }
 }

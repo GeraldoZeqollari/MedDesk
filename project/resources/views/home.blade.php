@@ -42,13 +42,13 @@
           </div>
          
           <div class="parking_paragraph flex gap-6 justify-between title04 rounded-md {{ $errors->has('location') ? ' has-error' : '' }}">
-            {{-- @foreach($locations as $location) --}}
+           
             <div class="color flex items-center text-poppins lg:text-4xl gap-6 sm:text-2xl ">
               <i class="fas fa-map-marker-alt"></i>
-              <h2 class="font-poppins font-normal lg:text-4xl sm:text-lg">ParkinGO</h2>
-              {{-- {{$location->location}} --}}
+              <h2 class="font-poppins font-normal lg:text-4xl sm:text-lg">ParkinGO Malpensa</h2>
+             
             </div>
-            {{-- @endforeach --}}
+           
             <div class="color hidden_date flex items-center gap-5">
               <i class="fas fa-clock"></i>
               <h2>March 23 2021</h2>
@@ -57,8 +57,9 @@
               
             <select name="location" id="" class="location">
               <option disabled selected value>select a location</option>
-              <option value="milano">Milano</option>
-              <option value="rome">Rome</option>
+              @foreach($locations as $location)
+              <option value=""> {{$location->location}}</option>
+              @endforeach
             </select>
             
           </div>
@@ -81,9 +82,9 @@
 
            <div class="flex w-full flex-wrap gap-5">
            
-            @for ($i = 0; $i < 10; $i++)
-            <livewire:button03 date_time="{{\Carbon\Carbon::now()->addDays($i)->toDateString()}}" button_value="{{\Carbon\Carbon::now()->addDays($i)->toDateString()}}" button_id="{{'btn'.$i}}"/>
-            @endfor
+            @foreach ($dates as $date)
+            <livewire:button03 date_time="{{$date->date->toDateString()}}" disabled="{{$date->availability}}" button_value="{{$date->id}}" button_id="{{$date->id}}"/>
+            @endforeach
      
            </div>
            <small class="text_error">{{ $errors->first('date') }}</small>
@@ -92,10 +93,10 @@
           <div class="page_left flex flex-col gap-1.5 {{ $errors->has('orari') ? ' has-error' : '' }}">
             <p class="color text-poppins lg:text-2xl sm:text-lg pt-3">Orari</p>
             <div class="flex flex-wrap gap-5">
-              @for ($i = 0; $i < 12; $i++)
-              <livewire:button-orari  date_time="{{\Carbon\Carbon::today()->addHours($i)->format('g:i',strtotime('7:00'))}}" button_value="{{\Carbon\Carbon::today()->addHours($i)->format('g:i')}}" button_id="{{'orari_btn'.$i}}"/>
-              @endfor
-            
+              @foreach ($oraris as $orari)
+              <livewire:button-orari date_time="{{$orari->orari->toDateString()}}" disabled="{{$orari->availability}}" button_value="{{$orari->id}}" button_id="{{$orari->id}}"/>
+              @endforeach
+              
             </div>
             <small class="text_error">{{ $errors->first('orari') }}</small>
           </div>

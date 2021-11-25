@@ -17,6 +17,7 @@ class CreateDatesTable extends Migration
             $table->id();
             $table->foreignId('location_id')->constrained('locations');
             $table->date("date");
+            $table->boolean("availability");
         });
     }
 

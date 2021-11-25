@@ -22,6 +22,11 @@
   height: 40px;
   border: 2px solid #0FB7B6;
 }
+.radio_disabled + label{
+  background-color: #969696;
+  width: 165px;
+  height: 40px;
+}
 .label_exp {
   font-family: v.$HeaderFont;
   cursor: pointer;

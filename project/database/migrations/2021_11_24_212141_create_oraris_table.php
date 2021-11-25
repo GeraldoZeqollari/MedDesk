@@ -17,6 +17,7 @@ class CreateOrarisTable extends Migration
             $table->id();
             $table->foreignId('date_id')->constrained('dates');
             $table->time("orari");
+            $table->boolean("availability");
         });
     }
 
