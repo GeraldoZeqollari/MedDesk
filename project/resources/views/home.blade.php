@@ -74,8 +74,8 @@
         <div class="lg:flex lg:pb-0 lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:pb-10" >
           <livewire:title title_text="02. Prenota or ai tamponin Drive-in"/>
             <div class="page_left gap-3 pt-3 flex flex-row flex-wrap lg:gap-12 sm:gap-6 lg:pb-8 sm:pb-6">
-             <livewire:button02 tampone_type="Tampone Rapido Antigenico" tampone_price="50$" div_id="" change=""/>
-             <livewire:button02 tampone_type="Tampone Moleculare PCR" tampone_price="90$"  div_id="div_color" change="changeColor()"/>
+             <livewire:button02 tampone_type="Tampone Rapido Antigenico" tampone_price="50$" div_id="" change="" select_id=""/>
+             <livewire:button02 tampone_type="Tampone Moleculare PCR" tampone_price="90$"  div_id="div_color" change="changeColor()" select_id="color"/>
             </div>
         </div>
 

@@ -26,6 +26,9 @@ function show() {
 
 function changeColor(){
   
-    document.getElementById("div_color").style.backgroundColor='#0FB7B6';       
+    document.getElementById("div_color").style.backgroundColor='#0FB7B6';   
+    document.getElementById("color").style.backgroundColor='#0FB7B6';      
   }
+
+ 
   

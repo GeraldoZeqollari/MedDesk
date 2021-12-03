@@ -14,7 +14,7 @@
         <input name="tampon_price" value="{{$tampone_price}}" hidden/>
             <div class="gap-1.5 flex items-center ">
                <p class="text-white">Qta</p>
-               <select name="tampon_quantity" id="" class="w-14 select_color">
+               <select name="tampon_quantity" id="{{$select_id}}" class="w-14 select_color">
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
