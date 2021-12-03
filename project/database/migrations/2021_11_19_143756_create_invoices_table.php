@@ -15,7 +15,6 @@ class CreateInvoicesTable extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
-            $table->string("invoice_address");
             $table->string("f_name");
             $table->string("l_name");
             $table->integer("f_code");
@@ -25,9 +24,12 @@ class CreateInvoicesTable extends Migration
             $table->integer("postal_code");
             $table->string("provinzia");
             $table->string("nazione");
-            $table->foreignId('orari_id')->constrained('orari');
-            $table->foreignId('location_id')->constrained('location');
-            $table->foreignId('date_id')->constrained('date');
+            $table->foreignId('location_id')->constrained('locations');
+            $table->foreignId('date_id')->constrained('dates');
+            $table->foreignId('orari_id')->constrained('oraris');
+            $table->string("tampon_type");
+            $table->string("tampon_price");
+            $table->integer("tampon_quantity");
         });
     }
 

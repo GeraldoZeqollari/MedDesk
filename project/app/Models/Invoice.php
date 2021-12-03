@@ -20,7 +20,13 @@ class Invoice extends Model
         'citta',
         'postal_code',
         'provinzia',
-        'nazione'
+        'nazione',
+        'location_id',
+        'date_id',
+        'orari_id',
+        'tampon_type',
+        'tampon_price',
+        'tampon_quantity'
 
     ];
 }

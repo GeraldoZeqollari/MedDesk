@@ -8,7 +8,10 @@ use App\Models\Location;
 use App\Models\PersonalData;
 use App\Http\Requests\CreateMedicalRecordRequest;
 use App\Models\Date;
+use App\Models\DateOrari;
+use App\Models\InvoiceInfo;
 use App\Models\Orari;
+use App\Models\TamponType;
 
 class MedicalFormController extends Controller
 {
@@ -17,17 +20,14 @@ class MedicalFormController extends Controller
         $locations = Location::all();
         $dates = Date::all();
         $oraris = Orari::all();
-
-
+        //$date_times = DateOrari::all();
+        
         return view('home')->with(compact('locations', 'dates', 'oraris'));
     }
 
     public function store(CreateMedicalRecordRequest $request)
     {
 
-        // $validated = $request->validated();
-
-        
         $personal_data = [
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
@@ -55,23 +55,24 @@ class MedicalFormController extends Controller
             'citta' => $request->citta,
             'postal_code' => $request->postal_code,
             'provinzia' => $request->provinzia,
-            'nazione' => $request->nazione
+            'nazione' => $request->nazione,
+            'location_id' => $request->location,
+            'date_id' => $request->date,
+            'orari_id' => $request->orari,
+            'tampon_type' => $request->tampon_type,
+            'tampon_price' => $request->tampon_price,
+            'tampon_quantity' => $request->tampon_quantity
         ];
         Invoice::create($invoice);
 
 
-        // Location::create([
-        //     'location' => $request->location
+        
+        // $orari = Orari::where('id',$request->orari);
+        // $orari->update([
+
+        //     'availability' => 1
         // ]);
 
-
-        // Date::create([
-        //     'date' => $request->date
-        // ]);
-
-        // Orari::create([
-        //     'orari' => $request->orari
-        // ]);
 
         return back()->with("status", "Success");
     }

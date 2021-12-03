@@ -15,4 +15,8 @@ class Date extends Model
     protected $fillable = [
         'date'
     ];
+    // public function oraris()
+    // {
+    //     return $this->hasMany('App\Orari', 'orari_id');
+    // }
 }

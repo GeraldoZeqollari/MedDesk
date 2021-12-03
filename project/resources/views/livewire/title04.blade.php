@@ -94,6 +94,6 @@
           <small class="text_error">{{ $errors->first('personal_data') }}</small>
         </div>
         
-      <livewire:round-button button_text="AVANTI"/>
+      <livewire:round-button button_text="AVANTI" button_id="button_avanti"/>
 
 

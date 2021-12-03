@@ -10,9 +10,11 @@ class Orari extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $dates = ['date'];
+    protected $dates = ['orari'];
+    
 
     protected $fillable = [
         'orari'
     ];
+   
 }

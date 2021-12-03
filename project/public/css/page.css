@@ -13,7 +13,7 @@
   background-color: #D0D8DA;
   outline: 0;
 }
-.feedback_issue {
+.radio_issue {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -23,7 +23,7 @@
   border: 2px solid #0FB7B6;
 }
 .radio_disabled + label{
-  background-color: #969696;
+  background-color: #D0D8DA;
   width: 165px;
   height: 40px;
 }
@@ -61,6 +61,9 @@
 }
 .button_text_color{
   color: #009ABB;
+}
+.select_color{
+  background-color: #D0D8DA;
 }
 
 .checkbox-round {
@@ -116,7 +119,7 @@
 }
 .time_card {
   padding: 15px 27px;
-  background-color: #0FB7B6;
+  background-color: #D0D8DA;
 }
 
 .back_color{
@@ -200,11 +203,7 @@ background-color: #F0F4F5;
   color:red;
 }
 
-/* .btn {
-  width: 165px;
-  height: 40px;
-  border: 2px solid #0FB7B6;
-} */
+
 
 @media only screen and (max-width: 765px) {
 

@@ -10,9 +10,13 @@
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
   />
+  <script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
+  
   @livewireStyles
 </head>
 <body>
+ 
+
     @livewire('navbar') 
 <div class="page_container">
 
@@ -43,10 +47,11 @@
          
           <div class="parking_paragraph flex gap-6 justify-between title04 rounded-md {{ $errors->has('location') ? ' has-error' : '' }}">
            
-            <div class="color flex items-center text-poppins lg:text-4xl gap-6 sm:text-2xl ">
+            <div class="color flex items-center text-poppins lg:text-4xl gap-6 sm:text-2xl" >
               <i class="fas fa-map-marker-alt"></i>
-              <h2 class="font-poppins font-normal lg:text-4xl sm:text-lg">ParkinGO Malpensa</h2>
-             
+              
+              <h2 class="font-poppins font-normal lg:text-4xl sm:text-lg" id="location_name">ParkinGO Malpensa</h2>
+           
             </div>
            
             <div class="color hidden_date flex items-center gap-5">
@@ -55,10 +60,10 @@
             </div>
             
               
-            <select name="location" id="" class="location">
+            <select name="location" id="location" class="location" onchange="show()">
               <option disabled selected value>select a location</option>
               @foreach($locations as $location)
-              <option value=""> {{$location->location}}</option>
+              <option value="{{$location->location}}"> {{$location->location}}</option>
               @endforeach
             </select>
             
@@ -69,8 +74,8 @@
         <div class="lg:flex lg:pb-0 lg:flex-col lg:gap-6 pt-4 sm:gap-2 sm:pb-10" >
           <livewire:title title_text="02. Prenota or ai tamponin Drive-in"/>
             <div class="page_left gap-3 pt-3 flex flex-row flex-wrap lg:gap-12 sm:gap-6 lg:pb-8 sm:pb-6">
-             <livewire:button02 tampone_type="Tampone Rapido Antigenico" tampone_price="50$"/>
-             <livewire:button02 tampone_type="Tampone Moleculare PCR" tampone_price="90$"/>
+             <livewire:button02 tampone_type="Tampone Rapido Antigenico" tampone_price="50$" div_id="" change=""/>
+             <livewire:button02 tampone_type="Tampone Moleculare PCR" tampone_price="90$"  div_id="div_color" change="changeColor()"/>
             </div>
         </div>
 
@@ -83,7 +88,7 @@
            <div class="flex w-full flex-wrap gap-5">
            
             @foreach ($dates as $date)
-            <livewire:button03 date_time="{{$date->date->toDateString()}}" disabled="{{$date->availability}}" button_value="{{$date->id}}" button_id="{{$date->id}}"/>
+            <livewire:button03 date_time="{{$date->date->toDateString()}}" disabled="{{$date->availability}}" button_value="{{$date->id}}" button_id="{{$date->date}}"/>
             @endforeach
      
            </div>
@@ -94,7 +99,9 @@
             <p class="color text-poppins lg:text-2xl sm:text-lg pt-3">Orari</p>
             <div class="flex flex-wrap gap-5">
               @foreach ($oraris as $orari)
-              <livewire:button-orari date_time="{{$orari->orari->toDateString()}}" disabled="{{$orari->availability}}" button_value="{{$orari->id}}" button_id="{{$orari->id}}"/>
+              {{-- @if($orari->date_id == 1) --}}
+              <livewire:button-orari date_time="{{$orari->orari->format('H:i')}}" disabled="{{$orari->availability}}" button_value="{{$orari->orari}}" button_id="{{$orari->orari}}"/>
+              {{-- @endif --}}
               @endforeach
               
             </div>
@@ -124,7 +131,8 @@
            
           
         </div>
-        <livewire:round-button button_text="VERIFICA"/>
+        <livewire:round-button button_text="VERIFICA" button_id="button_verifica"/>
+
      </form>
 
         <div class= "lg:flex lg:flex-col lg:gap-6 sm:gap-4 sm:mb-10 mb-10">
@@ -143,7 +151,7 @@
           Medispa S.r.l quale unico Responsabile Esterno del tratamentto
           dei dati sanitari .*(leggi)" checkbox_name="dati"/>
 
-          <livewire:round-button button_text="CONFERMA E PAGA"/>
+          <livewire:round-button button_text="CONFERMA E PAGA" button_id="conferma"/>
         
         </div> 
 

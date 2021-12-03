@@ -15,7 +15,6 @@ class CreatePersonalDataTable extends Migration
     {
         Schema::create('personal_data', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('invoice_id')->constrained('invoice');
             $table->string("first_name");
             $table->string("last_name");
             $table->string("email");

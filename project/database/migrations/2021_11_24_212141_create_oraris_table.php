@@ -15,7 +15,6 @@ class CreateOrarisTable extends Migration
     {
         Schema::create('oraris', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('date_id')->constrained('dates');
             $table->time("orari");
             $table->boolean("availability");
         });
